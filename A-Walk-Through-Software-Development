@@ -1,104 +1,472 @@
-<!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IBM SkillsBuild Capstone</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our IBM Skill Build Journey | Software Development</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        margin: 0;
-        padding: 20px;
-        color: #333;
-        line-height: 1.6;
-      }
-      h1, h2 {
-        color: #1a237e;
-      }
-      .section {
-        margin-bottom: 40px;
-        background: white;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      }
-      ul {
-        padding-left: 20px;
-      }
+        /* Custom gradient text */
+        .gradient-text {
+            background: linear-gradient(90deg, #0062FF, #00D1FF);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        /* IBM color scheme */
+        .ibm-blue {
+            background-color: #0062FF;
+        }
+        
+        .ibm-light-blue {
+            background-color: #00D1FF;
+        }
+        
+        /* Custom card hover effect */
+        .learning-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        /* Smooth transitions */
+        .smooth-transition * {
+            transition: all 0.3s ease;
+        }
     </style>
-  </head>
-  <body>
-    <h1>IBM SkillsBuild Capstone Project</h1>
+</head>
+<body class="smooth-transition bg-gray-50 text-gray-800 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold gradient-text">IBM Skill Build Journey</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#overview" class="hover:text-blue-600 transition">Overview</a>
+                    <a href="#learning" class="hover:text-blue-600 transition">Our Learning</a>
+                    <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                    <a href="#reflections" class="hover:text-blue-600 transition">Reflections</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobileMenuButton" class="p-2 rounded-md hover:bg-gray-100">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white pb-4 px-4">
+            <div class="flex flex-col space-y-2">
+                <a href="#overview" class="block px-3 py-2 rounded-md hover:bg-gray-100">Overview</a>
+                <a href="#learning" class="block px-3 py-2 rounded-md hover:bg-gray-100">Our Learning</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md hover:bg-gray-100">Projects</a>
+                <a href="#reflections" class="block px-3 py-2 rounded-md hover:bg-gray-100">Reflections</a>
+            </div>
+        </div>
+    </nav>
 
-```
-<div class="section">
-  <h2>Introduction</h2>
-  <p>The capstone project marks the end of all that was gained from the IBM SkillsBuild learning experience, in which we mastered the learning aspects of software development. Throughout the experience, we had great exposure to programming basics, development tools and techniques, and industry best practices. In this project, it applies what was learned, and builds and creates a website that not only demonstrates that we're capable in programming but also showcases our learning from the IBM SkillsBuild platform. This website is a learning milestone and a professional portfolio combined into one, and is a reflection of the real-world impact of the IBM SkillsBuild program.</p>
-</div>
+    <!-- Hero Section -->
+    <header class="py-20 px-4 sm:px-6 lg:px-8 ibm-blue text-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6">
+                A Walk Through of <span class="gradient-text">Software Development</span>
+            </h1>
+            <p class="text-xl md:text-2xl opacity-90 mb-8 max-w-3xl mx-auto">
+                Our journey through IBM Skill Build's Software Development program
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#learning" class="px-6 py-3 bg-white text-blue-600 hover:bg-gray-100 rounded-lg font-medium transition">
+                    Explore Our Learning
+                </a>
+                <a href="#projects" class="px-6 py-3 border border-white hover:bg-white hover:bg-opacity-10 rounded-lg font-medium transition">
+                    View Projects
+                </a>
+            </div>
+            <div class="mt-16 flex justify-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" 
+                     alt="IBM Logo" 
+                     class="h-16 opacity-90">
+            </div>
+        </div>
+    </header>
 
-<div class="section">
-  <h2>Nomenclature</h2>
-  <ul>
-    <li><strong>HTML (Hyper-text Markup Language):</strong> Coding language used to build the structure of a webpage.</li>
-    <li><strong>CSS:</strong> Code that styles a webpage that includes colors, layouts, and fonts.</li>
-    <li><strong>Debugging:</strong> Fixing mistakes in a code.</li>
-    <li><strong>Software Development:</strong> The process of planning, designing, creating, testing, and maintaining computer programs or applications.</li>
-    <li><strong>Wireframe:</strong> A basic visual guide showing the layout of a website or app before it’s built.</li>
-    <li><strong>SSL:</strong> A way to make websites secure.</li>
-  </ul>
-</div>
+    <!-- Overview Section -->
+    <section id="overview" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                <span class="gradient-text">Program Overview</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="p-6 rounded-lg shadow-md border-t-4 border-blue-500">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-laptop-code text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Comprehensive Curriculum</h3>
+                    <p class="text-gray-600">
+                        IBM Skill Build covers all aspects of modern software development from fundamentals to advanced concepts.
+                    </p>
+                </div>
+                
+                <div class="p-6 rounded-lg shadow-md border-t-4 border-blue-500">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-hands-helping text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Hands-on Learning</h3>
+                    <p class="text-gray-600">
+                        Practical exercises and real-world projects to apply theoretical knowledge in practical scenarios.
+                    </p>
+                </div>
+                
+                <div class="p-6 rounded-lg shadow-md border-t-4 border-blue-500">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-certificate text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Industry Recognition</h3>
+                    <p class="text-gray-600">
+                        Skills and certifications recognized by industry leaders and employers worldwide.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-blue-50 p-8 rounded-xl">
+                <h3 class="text-2xl font-bold mb-4 text-blue-800">About Our Journey</h3>
+                <div class="prose max-w-none text-gray-700">
+                    <p class="mb-4">
+                        Our IBM Skill Build experience has been an engaging and eye opening one. Throughout the course of the program, we learned the various dimensions of software development, from learning the fundamentals of coding to applying the skills we learned on projects. We used interactive modules that instructed us in coding languages, web development, and the problem-solving skills used by real-life developers. The most rewarding experience has been doing tasks on real projects that challenged us to develop functional programs and the software developer mindset. The program not only equipped us with the technical skills but also gave us the confidence to become career technologists. IBM Skill Build as a whole, provided us with the platform on which we learned to develop as learners, creators, and future developers. Initially we started with minimal familiarity with software, but lesson by lesson and project by project we built a good understanding of the behind-the-scenes of software development. Each of the modules motivated us to get into the mindset of thinking differently, solving problems creatively and acquiring genuine coding skills. Throughout the process of doing these projects with each other, we learned the importance of planning and communication when developing software. Challenges we overcame increased our self-confidence and prepared us for what lies ahead in the world of tech. IBM Skill Build taught us more than coding — we learned how to develop as individuals and as developers.
+                    </p>
+                    <p>
+                         
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="section">
-  <h2>Background</h2>
-  <p>While the tech industry is growing daily, the demand for professionals with strong software development skills continues to increase. This makes it essential for students to gain exposure to coding and web development through hands-on learning experiences and real-world applications. IBM SkillsBuild is a learning platform created to help students build skills in these specific areas. The platform offers learning paths that are structured, interactive modules, and certifications that could prepare one for a career. The goal was to take what we learned from IBM SkillsBuild and apply it by creating a functional website. This allowed us to turn our knowledge into a hands-on project, while also building teamwork and problem-solving skills. With no mentor, we worked independently and collaborated with each other through the learning process and our final website.</p>
-</div>
+    <!-- Learning Section -->
+    <section id="learning" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                <span class="gradient-text">Key Learnings</span> from the Program
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Learning Card 1 -->
+                <div class="learning-card bg-white rounded-xl shadow-md p-6 transition duration-300 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-lg bg-blue-100 text-blue-600">
+                            <i class="fas fa-code text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4">Programming Fundamentals</h3>
+                    </div>
+                    <div class="prose max-w-none text-gray-600 mb-4">
+                        <p>As part of our course learning on IBM Skill Build, we began by learning the basics of programming that gave us the foundation we needed in order to learn how software works. We contimued with basic things like variables, data types, conditionals, loops, and functions. These enabled us to write basic programs and understand how the computer interprets instructions.</p>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li>Variables and data types – How to store and manage information</li>
+                            <li>Conditional statements – making decisions in code using if, else, and elif statements</li>
+                            <li>Loops – repeating tasks using for and while loops</li>
+                            <li>Functions – organizing code into reusable blocks</li>
+                            <li>Debugging – identifying and fixing errors in code</li>
+                        </ul>
+                        <p class="mt-4">Learning these fundamentals was a major stepping stone. It made more complex projects easier to approach, understand and it evidently gave us the confidence to tackle real development challenges later in the program.
 
-<div class="section">
-  <h2>Problem/Purpose Statement</h2>
-  <p>The purpose of this capstone project is to utilize the IBM SkillsBuild platform to enhance knowledge of software development. The platform covers key principles, programming languages, and best practices for learning in the tech field. Through the completion of various modules and activities, a strong foundation in coding is developed, along with certifications that can support future job opportunities. As the final product, a website is created to showcase acquired skills, growth, and understanding of software development concepts.</p>
-</div>
+</p>
+                    </div>
+                </div>
+                
+                <!-- Learning Card 2 -->
+                <div class="learning-card bg-white rounded-xl shadow-md p-6 transition duration-300 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-lg bg-blue-100 text-blue-600">
+                            <i class="fas fa-globe text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4">Web Development</h3>
+                    </div>
+                    <div class="prose max-w-none text-gray-600 mb-4">
+                        <p>During our IBM Skill Build experience, we learned the basics of web development and the way websites get built and work. We started with front-end web development and how to structure and build websites with HTML, CSS, and JavaScript. We learned how to make websites responsive, user-friendly, and aesthetically pleasing. We learned how to organize files, connect pages between them, and handle content. This helped us code a website from the ground up and laid the groundwork for learning more complex web development.</p>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li>HTML – creating page structures with elements like headings, paragraphs, images, and links</li>
+                            <li>CSS – styling pages with colors, layouts, and fonts</li>
+                            <li>JavaScript – adding interactivity like buttons, animations, and dynamic content</li>
+                            <li>Responsive design – making the website look good on all devices</li>
+                            <li>File and folder organization – keeping our code clean and manageable</li>
+                        </ul>
+                        <p class="mt-4">Learning web development gave us the ability to bring our ideas to life online. It showed us how much detail goes into building even the simplest websites and made us appreciate the work of professional developers.</p>
+                    </div>
+                </div>
+                
+                <!-- Learning Card 3 -->
+                <div class="learning-card bg-white rounded-xl shadow-md p-6 transition duration-300 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-lg bg-blue-100 text-blue-600">
+                            <i class="fas fa-server text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4">Backend Development</h3>
+                    </div>
+                    <div class="prose max-w-none text-gray-600 mb-4">
+                        <p>As we progressed in the IBM Skill Build program, we explored the fundamentals of backend development — the part of web development that runs behind the scenes. While the frontend focuses on what users see and interact with, the backend handles all the logic, data, and server-side processes that power those features. We learned how websites connect to databases, manage user input, and deliver information securely and efficiently. By working with tools like Node.js and learning about APIs, we started to understand how full-stack development works. It gave us a deeper appreciation for how websites function beyond the surface.</p>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li>Servers – how requests and responses are handled between the browser and the server</li>
+                            <li>APIs (Application Programming Interfaces) – letting different programs and services communicate</li>
+                            <li>Databases – storing, updating, and retrieving data (like usernames, posts, etc.)Databases – storing, updating, and retrieving data (like usernames, posts, etc.)</li>
+                            <li>Node.js – using JavaScript to run backend logic</li>
+                            <li>Authentication & Security – protecting user data and controlling access</li>
+                        </ul>
+                        <p class="mt-4">Learning backend development gave us a more complete view of how modern web applications work. It taught us how to make a website do something — not just look good — and helped us move closer to becoming full-stack developers.</p>
+                    </div>
+                </div>
+                
+                <!-- Learning Card 4 -->
+                <div class="learning-card bg-white rounded-xl shadow-md p-6 transition duration-300 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-lg bg-blue-100 text-blue-600">
+                            <i class="fas fa-cloud text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4">Cloud & DevOps</h3>
+                    </div>
+                    <div class="prose max-w-none text-gray-600 mb-4">
+                        <p>We were also introduced to Cloud Computing and DevOps, which initially taught us how applications these days are constructed, deployed, and operated. We learned how the developers utilize the cloud platforms for storing their data, executing programs, and scaling projects effectively. DevOps taught us how the teams work together with one another, automate processes, and deploy changes more quickly.</p>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li>Cloud basics – understanding cloud services and deployment models</li>
+                            <li>IaaS, PaaS, SaaS – types of cloud service models</li>
+                            <li>DevOps – combining development and operations for smoother workflows</li>
+                            <li>Automation – using tools to speed up testing and deployment</li>
+                            <li>CI/CD pipelines – for continuous integration and delivery</li>
+                        </ul>
+                        <p class="mt-4">This section helped us see the bigger picture of how real-world software is developed and deployed at scale.</p>
+                    </div>
+                </div>
+                
+                <!-- Learning Card 5 -->
+                <div class="learning-card bg-white rounded-xl shadow-md p-6 transition duration-300 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-lg bg-blue-100 text-blue-600">
+                            <i class="fas fa-shield-alt text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4">Software Security</h3>
+                    </div>
+                    <div class="prose max-w-none text-gray-600 mb-4">
+                        <p>We learned how to protect software against attacks and data breaches in the class of Software Security. We learned vulnerabilities that are common, how an attacker utilizes them and enters the system, and how the developer needs to counter the attacks. It opened our eyes to the realization that we should create secure and reliable software.</p>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li>Cybersecurity basics – understanding threats and protection</li>
+                            <li>Common vulnerabilities – like SQL injection and cross-site scripting (XSS)</li>
+                            <li>Best practices – strong passwords, input validation, secure coding</li>
+                            <li>Encryption – protecting data in transit and at rest</li>
+                            <li>User authentication – verifying user identity securely</li>
+                        </ul>
+                        <p class="mt-4">Software security taught us that writing code is only part of the job — keeping that code safe is just as important.</p>
+                    </div>
+                </div>
+                
+                <!-- Learning Card 6 -->
+                <div class="learning-card bg-white rounded-xl shadow-md p-6 transition duration-300 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-lg bg-blue-100 text-blue-600">
+                            <i class="fas fa-users text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4">Team Collaboration</h3>
+                    </div>
+                    <div class="prose max-w-none text-gray-600 mb-4">
+                        <p>
+Throughout our IBM Skill Build timeline, we also focused on team collaboration — a key part of working in tech. We learned how to communicate clearly, divide tasks, and work together to solve problems and complete projects efficiently. Collaboration helped us build better results and grow our collaboration skills.
+</p>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li>Task management – organizing who does what</li>
+                            <li>Communication – sharing ideas, giving feedback, and asking for help</li>
+                            <li>Problem-solving – working through issues as a group</li>
+                            <li>Version control – using tools like Git to manage code together</li>
+                            <li>Responsibility – staying accountable to the team</li>
+                        </ul>
+                        <p class="mt-4">Working as a team showed us that great code isn’t built alone — it’s built through collaboration, support, and shared effort.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="section">
-  <h2>Objectives</h2>
-  <p>The objective of this project is to strengthen knowledge and understanding of software development through the IBM SkillsBuild platform. The goal includes completing courses to earn certifications in web development and data. Additionally, the project aims to create a website that showcases the knowledge and skills gained throughout the SkillsBuild program. This process is designed to develop collaboration, teamwork, and independent problem-solving skills, all achieved without the guidance of a mentor.</p>
-</div>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                <span class="gradient-text">Projects</span> & Practical Applications
+            </h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-project-diagram text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Building a Personal Movie Recommender with Django</h3>
+                        <p class="text-gray-600 mb-4">
+                            One of the projects that we completed in IBM Skill Build is “Build Your Own Movie Recommender with Django.” In the project, we constructed a fundamental web application that offers personalized movie recommendations based on user input. Using Django as a web framework for the Python coding language, the project aimed at giving us practical experience in building a functional website that accepts input from the user, interacts with a database, and offers personalized movie suggestions. The concept behind the project was that we should apply what we had learned in practice by implementing backend development, user interface, and general machine learning logic in an entertaining way.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-blue-600 mb-2">What We Learned:</h4>
+                            <div class="prose max-w-none text-gray-700">
+                                <p>We learned fundamental skills of setting up a Django framework, structuring web programs, and linking models with user inputs throughout this project. We learned skills on how to handle databases, develop interactive web pages, and provide a smooth user experience with user-friendly interfaces. Most importantly, we learned how real-life software projects are conceived, engineered, and executed from start to finish. This project enabled us to bridge the gap between the school and the real world and increased our self ability in applying our skills to address real-life issues in the real world.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-xs">Python</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-xs">Django </span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-xs">HTML 3</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="h-48 bg-gradient-to-r from-blue-400 to-blue-500 flex items-center justify-center">
+                        <i class="fas fa-laptop-code text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Machine Learning for Data Science Projects</h3>
+                        <p class="text-gray-600 mb-4">
+                            This IBM Skill Build self-study course takes a deep dive into advanced subjects core to the field of data science. The task is to go through learning activities on data modeling concepts, machine learning, deep learning approaches, and data science automation. This course is designed to mimic the real world in the sense that it calls upon the learner to pretend to play important roles in a data science team with the newest analytics and automation tools of AI in a real-world setting. The theme of this course is the empowerment of learners with advanced-level skills that can be used in the field of data science with a view to advancing their capacity to solve complicated data-related problems.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-blue-600 mb-2">What We Learned:</h4>
+                            <div class="prose max-w-none text-gray-700">
+                                <p>In this  project, we enhanced our machine learning and data science skills through practical implementations of intricate concepts. We acquired the skill of applying deep learning techniques and methods of data modeling on practical datasets. The role-play of the course introduced us to the dynamics of the data science team setting that
+setting that
+ 
+setting, which
+Accept
+Dismiss
+ sharpened our problem-solving skills as well as teamwork skills. We obtained skills in the utilization of the tools of AI for analytics as well as automation that form the core skills in the world of data science nowadays. This course not only technologically prepared us but enabled us to conduct tasks in the area of data-informed projects in the professional world.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-xs">Python</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-xs">Pandas</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-xs">Scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="h-48 bg-gradient-to-r from-blue-600 to-blue-700 flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Build Your First Chatbot Using IBM watsonx</h3>
+                        <p class="text-gray-600 mb-4">
+                            We learned the skills of building a conversational chatbot using the IBM watsonx Assistant throughout this practical course. The course presented us with the process of building a natural language-capable chatbot. We began using the fundamentals of Natural Language Processing (NLP) and initiated them practically using the process of
+using the process of
+ 
+by
+Accept
+Dismiss
+ building a baseline chatbot. The course aimed to make us aware of the skills we should develop in order to create AI-powered chatbots capable of effectively communicating with users.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-blue-600 mb-2">What We Learned:</h4>
+                            <div class="prose max-w-none text-gray-700">
+                                <p>We learned directly from this project how we as a team can develop intents and entities to specify the chatbot's comprehension of user inputs. We learned how to develop dialogues for controlling the flow of the conversation and how to deploy the chatbot to make it interactive for users. This improved our understanding of AI-powered communication tools and how they can be used in companies.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-xs">IBM watsonx Assistant</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-xs">Natural Language Processing (NLP)</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-xs">Dialog Management</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="h-48 bg-gradient-to-r from-blue-700 to-blue-800 flex items-center justify-center">
+                        <i class="fas fa-database text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">IBM Skill Build Cybersecurity Certificate</h3>
+                        <p class="text-gray-600 mb-4">
+                            The IBM Skill Build Cybersecurity Certificate is a comprehensive course designed to provide students with advanced technical cybersecurity information. The 65+-hour course covers such critical topics as security posture analysis, vulnerability analysis, network design, security of cloud infrastructure, security operations, and incident reporting. With the combination of theoretical education and practical skills, students are subjected to experiential learning in real-world working situations, through a blend of classroom sessions and hands-on experience, making them job-ready for cybersecurity careers in any industry. Career and workplace management skills are also emphasized, enabling students to become competent professionals who can implement their knowledge in solving real-world issues. Cybersecurity is a serious addition to software development, as all websites need security to keep them safe and secure, making them go hand in hand with each other.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-blue-600 mb-2">What We Learned:</h4>
+                            <div class="prose max-w-none text-gray-700">
+                                <p>We developed extensive knowledge of the nature of cybersecurity throughout this program. We learned how to assess and fortify an organization's posture for security, find and repair vulnerabilities, and construct safe network infrastructures. We obtained practical skills in cloud infrastructure protection, learning how to safeguard information and programs in the cloud. We learned how to conduct efficient security operations and the process of reporting incidents, enabling us to respond promptly and efficiently in the case of a security breach. This comprehensive process not only equipped us with technical skills but also the strategic perspective necessary for cybersecurity leadership roles.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-xs">SIEM (Security Information and Event Management)</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-xs">Cloud Security Tools</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-xs">Network Security Protocols</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-blue-50 p-8 rounded-xl">
+                <h3 class="text-2xl font-bold mb-4 text-blue-800">Project Development Insights</h3>
+                <div class="prose max-w-none text-gray-700">
+                    <p>These IBM Skill Build projects have proven to be a freeing and much needed experience. Each one of them presented an opportunity to apply what we learned in practical, real-life examples - from building websites and chatbots to learning machine learning, cloud computing, and software security. These were no textbook lessons; these were real-life dilemmas that set us up as better developers and problem solvers. We learned how to code on purpose, how to work together as a team properly, and how to properly debug the software we've built. But most of all, perhaps, we learned how the different aspects of tech - development, security, and AI - overlap and enhance each other in the real world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="section">
-  <h2>Proposal</h2>
-  <p>The IBM SkillsBuild platform was used as the primary source to guide learning in software development. The platform provided lessons in areas such as HTML, CSS, and JavaScript. The goal of the project was to apply knowledge learned and build a functioning website. It emphasized independent work, peer collaboration, and experience using tools that are used in real-world settings. The completed website serves as a demonstration of the skills developed through the coding experience and problem solving.</p>
-</div>
-
-<div class="section">
-  <h2>Materials</h2>
-  <ul>
-    <li><strong>GitHub:</strong> A coding platform where you can collaborate with peers to create a website.</li>
-    <li><strong>IBM SkillsBuild:</strong> An online course that helps you learn coding, web development, and cybersecurity skills.</li>
-    <li><strong>Canva:</strong> Used to outline how the website looked.</li>
-  </ul>
-</div>
-
-<div class="section">
-  <h2>Methods</h2>
-  <p>The journey began with IBM SkillsBuild by completing foundational courses in programming languages, algorithms, and data structures to establish a solid base in software development. Learning was reinforced through regular practice, including quizzes, exercises, and revisiting challenging topics to strengthen coding skills. SkillsBuild tools were utilized to apply knowledge through coding challenges and live code testing environments. A website project was initiated with a focus on layout, design, and implementing core functionality using HTML, CSS, and JavaScript. Development progressed through collaborative efforts involving code reviews, problem-solving, and debugging. The site was improved by correcting issues, refining code comments, and optimizing performance. In the final stage, the project was thoroughly tested, remaining issues were resolved, and the website was finalized to ensure proper functionality and completion.</p>
-</div>
-
-<div class="section">
-  <h2>Results</h2>
-  <p>The result of this project was a functional website created with HTML and CSS, with structure and styling based on the lessons that were completed on the IBM SkillsBuild. The layout and design were based on initial wireframes that were created on Canva. Each section of the website reflects the coding principles learned from the learning modules. The completed website demonstrates a clear understanding of HTML, styling with CSS, and responsive layout practices. Through the development process, debugging and code review techniques were applied to improve site performance and ensure clean, maintainable code. These steps not only enhanced the final product but also reflected real-world software engineering workspaces, reinforcing best practices in coding and project organization.</p>
-</div>
-
-<div class="section">
-  <h2>Discussion</h2>
-  <p>The project highlighted the effectiveness of self-guided learning using structured platforms like IBM SkillsBuild. By progressing through the lessons at an individual pace, concepts of web development and software engineering were successfully understood and applied. Building the website from scratch helped connect what was learned in theory to real, hands-on practice. Some challenges came along the way, such as getting the layout right, styling issues, and even organizing content clearly. These problems were solved by researching solutions, testing different methods, and getting peer feedback on what to add or change on the website. Working as a group also helped divide tasks, stay on track, and solve problems more efficiently.</p>
-</div>
-
-<div class="section">
-  <h2>Conclusion</h2>
-  <p>This capstone project helped turn learning into a real experience by applying software development skills from the IBM SkillsBuild platform. Topics that dealt with software development were not only studied but used in a hands-on way to build a working website. This project showed that self-paced learning can be just as effective as regular teaching when the tools are given, as well as being motivated. The final website stands as proof of the knowledge that was gained and shows how much progress was made. This experience also built confidence and created a starting point for future opportunities in the tech field. By applying these skills in a real-world situation, the project bridges the gap between academic learning and real-world application.</p>
-</div>
-```
-
-  </body>
-</html>
+    <!-- Reflections Section -->
+    <section id="reflections" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                <span class="gradient-text">Personal Reflections</span> on the Journey
+            </h2>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-blue-600">Growth as a Developer</h3>
+                    <div class="prose max-w-none text-gray-700 mb-8">
+                        <p>Our software skills and competencies increased immensely with IBM Skill Build. We started with minimal knowledge but continued developing our self-confidence by doing real-world projects, learning innovative technologies, and cracking problems in practical ways. Each step of the way increased our awareness of how software is created, how it is protected, and how it is improved.</p>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li>Learned to write clean, organized code using HTML, CSS, JavaScript, and Python</li>
+                            <li>Gained confidence using tools like Git, cloud platforms, and IBM watsonx</li>
+                            <li>Improved problem-solving by breaking tasks into manageable parts</li>
+                            <li>Developed an understanding of secure coding and software safety</li>
+                            <li>Learned to plan projects and work collaboratively with others</li>
+                            <li>Began thinking like a developer — balancing logic, design, and user experience</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold mb-6 text-blue-600">Challenges Overcome</h3>
+                    <div class="prose max-w-none text-gray-700 mb-8">
+                        <p>The team encountered some difficulties within the IBM Skill Build program that really tested our patience and problem-solving skills. Sometimes it was difficult with new information and timelines but we learned from each challenge. By having the resolve and using the tools provided as well as managing our time more effectively, We were able to persevere and carry on.</p>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li>Faced technical issues with code not running correctly and used online forums and debugging to fix them</li>
+                            <li>Struggled with understanding JavaScript logic at first but practiced through small projects and tutorials</li>
+                            <li>Learned to manage time by creating a weekly schedule and breaking tasks into smaller steps</li>
+                            <li>Overcame confusion about cloud computing by rewatching video lessons and taking notes</li>
+                            <li>Used IBM Skill Build forums, documentation, and peer support to stay on track and find answers</li>
+                            <li>Built confidence by completing each project, even when it felt overwhelming at the start</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold mb-6 text-blue-600">Future Applications</h3>
+                    <div class="prose max-w-none text-gray-700">
+                        <p>The IBM Skill Build program has helped the team gain a strong interest in technology as well as  software development, and we now see ourselves towards a path of a future career in this field. The skills we have gained not only give us a strong foundation but also inspire us to keep building, learning, and exploring new areas in tech.</p>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li>Pursue a career in software or web development, focusing on front-end or full-stack roles</li>
+                            <li>Explore more advanced areas like app development, artificial intelligence, and ethical hacking</li>
+                            <li>Build personal projects like a portfolio website, task manager app, or chatbot for productivity</li>
+                            <li>Continue learning through online courses, certifications, and hands-on practice</li>
+                            <li>Stay updated with new tools and technologies by following industry blogs and developer communities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-blue-600 text-white p-8 rounded-xl">
+                <h3 class="text-2xl font-bold mb-4">Final Thoughts</h3>
+                <div class="prose max-w-none text-blue-100">
+                    <p>Overall, the IBM SkillsBuild program impacted our learning and development in software development immensely. It provided us with a structured manner of learning practical skills and converting them into productive outcomes. Throughout the program, we increased our belief in ourselves, enhanced our skills in all the technical domains, and gained hands-on skills that we can apply throughout our lives. Not just did the program open the world of software development for us — it helped us realize the growth we've achieved and the distance we might travel in the times to come. For all of us, the experience proved a turning point in our career and personal lives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
