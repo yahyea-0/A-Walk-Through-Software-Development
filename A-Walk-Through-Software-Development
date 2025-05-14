@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IBM SkillsBuild Capstone</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+        line-height: 1.6;
+      }
+      h1, h2 {
+        color: #1a237e;
+      }
+      .section {
+        margin-bottom: 40px;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>IBM SkillsBuild Capstone Project</h1>
+
+```
+<div class="section">
+  <h2>Introduction</h2>
+  <p>The capstone project marks the end of all that was gained from the IBM SkillsBuild learning experience, in which we mastered the learning aspects of software development. Throughout the experience, we had great exposure to programming basics, development tools and techniques, and industry best practices. In this project, it applies what was learned, and builds and creates a website that not only demonstrates that we're capable in programming but also showcases our learning from the IBM SkillsBuild platform. This website is a learning milestone and a professional portfolio combined into one, and is a reflection of the real-world impact of the IBM SkillsBuild program.</p>
+</div>
+
+<div class="section">
+  <h2>Nomenclature</h2>
+  <ul>
+    <li><strong>HTML (Hyper-text Markup Language):</strong> Coding language used to build the structure of a webpage.</li>
+    <li><strong>CSS:</strong> Code that styles a webpage that includes colors, layouts, and fonts.</li>
+    <li><strong>Debugging:</strong> Fixing mistakes in a code.</li>
+    <li><strong>Software Development:</strong> The process of planning, designing, creating, testing, and maintaining computer programs or applications.</li>
+    <li><strong>Wireframe:</strong> A basic visual guide showing the layout of a website or app before it’s built.</li>
+    <li><strong>SSL:</strong> A way to make websites secure.</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Background</h2>
+  <p>While the tech industry is growing daily, the demand for professionals with strong software development skills continues to increase. This makes it essential for students to gain exposure to coding and web development through hands-on learning experiences and real-world applications. IBM SkillsBuild is a learning platform created to help students build skills in these specific areas. The platform offers learning paths that are structured, interactive modules, and certifications that could prepare one for a career. The goal was to take what we learned from IBM SkillsBuild and apply it by creating a functional website. This allowed us to turn our knowledge into a hands-on project, while also building teamwork and problem-solving skills. With no mentor, we worked independently and collaborated with each other through the learning process and our final website.</p>
+</div>
+
+<div class="section">
+  <h2>Problem/Purpose Statement</h2>
+  <p>The purpose of this capstone project is to utilize the IBM SkillsBuild platform to enhance knowledge of software development. The platform covers key principles, programming languages, and best practices for learning in the tech field. Through the completion of various modules and activities, a strong foundation in coding is developed, along with certifications that can support future job opportunities. As the final product, a website is created to showcase acquired skills, growth, and understanding of software development concepts.</p>
+</div>
+
+<div class="section">
+  <h2>Objectives</h2>
+  <p>The objective of this project is to strengthen knowledge and understanding of software development through the IBM SkillsBuild platform. The goal includes completing courses to earn certifications in web development and data. Additionally, the project aims to create a website that showcases the knowledge and skills gained throughout the SkillsBuild program. This process is designed to develop collaboration, teamwork, and independent problem-solving skills, all achieved without the guidance of a mentor.</p>
+</div>
+
+<div class="section">
+  <h2>Proposal</h2>
+  <p>The IBM SkillsBuild platform was used as the primary source to guide learning in software development. The platform provided lessons in areas such as HTML, CSS, and JavaScript. The goal of the project was to apply knowledge learned and build a functioning website. It emphasized independent work, peer collaboration, and experience using tools that are used in real-world settings. The completed website serves as a demonstration of the skills developed through the coding experience and problem solving.</p>
+</div>
+
+<div class="section">
+  <h2>Materials</h2>
+  <ul>
+    <li><strong>GitHub:</strong> A coding platform where you can collaborate with peers to create a website.</li>
+    <li><strong>IBM SkillsBuild:</strong> An online course that helps you learn coding, web development, and cybersecurity skills.</li>
+    <li><strong>Canva:</strong> Used to outline how the website looked.</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Methods</h2>
+  <p>The journey began with IBM SkillsBuild by completing foundational courses in programming languages, algorithms, and data structures to establish a solid base in software development. Learning was reinforced through regular practice, including quizzes, exercises, and revisiting challenging topics to strengthen coding skills. SkillsBuild tools were utilized to apply knowledge through coding challenges and live code testing environments. A website project was initiated with a focus on layout, design, and implementing core functionality using HTML, CSS, and JavaScript. Development progressed through collaborative efforts involving code reviews, problem-solving, and debugging. The site was improved by correcting issues, refining code comments, and optimizing performance. In the final stage, the project was thoroughly tested, remaining issues were resolved, and the website was finalized to ensure proper functionality and completion.</p>
+</div>
+
+<div class="section">
+  <h2>Results</h2>
+  <p>The result of this project was a functional website created with HTML and CSS, with structure and styling based on the lessons that were completed on the IBM SkillsBuild. The layout and design were based on initial wireframes that were created on Canva. Each section of the website reflects the coding principles learned from the learning modules. The completed website demonstrates a clear understanding of HTML, styling with CSS, and responsive layout practices. Through the development process, debugging and code review techniques were applied to improve site performance and ensure clean, maintainable code. These steps not only enhanced the final product but also reflected real-world software engineering workspaces, reinforcing best practices in coding and project organization.</p>
+</div>
+
+<div class="section">
+  <h2>Discussion</h2>
+  <p>The project highlighted the effectiveness of self-guided learning using structured platforms like IBM SkillsBuild. By progressing through the lessons at an individual pace, concepts of web development and software engineering were successfully understood and applied. Building the website from scratch helped connect what was learned in theory to real, hands-on practice. Some challenges came along the way, such as getting the layout right, styling issues, and even organizing content clearly. These problems were solved by researching solutions, testing different methods, and getting peer feedback on what to add or change on the website. Working as a group also helped divide tasks, stay on track, and solve problems more efficiently.</p>
+</div>
+
+<div class="section">
+  <h2>Conclusion</h2>
+  <p>This capstone project helped turn learning into a real experience by applying software development skills from the IBM SkillsBuild platform. Topics that dealt with software development were not only studied but used in a hands-on way to build a working website. This project showed that self-paced learning can be just as effective as regular teaching when the tools are given, as well as being motivated. The final website stands as proof of the knowledge that was gained and shows how much progress was made. This experience also built confidence and created a starting point for future opportunities in the tech field. By applying these skills in a real-world situation, the project bridges the gap between academic learning and real-world application.</p>
+</div>
+```
+
+  </body>
+</html>
